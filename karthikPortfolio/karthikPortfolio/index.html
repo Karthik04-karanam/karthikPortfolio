@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Karthik Venkata Jaya Karthik | Aspiring Software Developer</title>
+  <meta name="title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
+  <meta name="description"
+    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
+  <meta name="author" content="Karthik Venkata Jaya Karthik" />
+  <meta name="keywords"
+    content="Karthik Venkata Jaya Karthik, Aspiring Software Developer, Python, Web Development, AI, FastAPI, Aditya Polytechnic College, Rajahmundry, Software Engineer Portfolio" />
+  <meta name="theme-color" content="#060911" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/Karthik04-karanam" />
+  <meta property="og:title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
+  <meta property="og:description"
+    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
+  <meta property="og:image" content="assets/images/karthik.jpg" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
+  <meta name="twitter:description"
+    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
+  <meta name="twitter:image" content="assets/images/karthik.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23060911'/><text x='50%' y='68%' font-size='56' font-weight='800' font-family='sans-serif' fill='%2300d2ff' text-anchor='middle'>K</text></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6.5 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- EmailJS Browser SDK (optional integration) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header id="main-header" class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Karthik Venkata Jaya Karthik Homepage">
+        Karthik<span class="accent">.</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#why-hire-me" class="nav-link">Why Hire Me</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Status Indicator & CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-nav-cta">
+          Let's Connect <i class="fa-solid fa-arrow-right ml-1"></i>
+        </a>
+        <button id="mobile-toggle" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-nav-drawer" aria-hidden="true" role="dialog"
+    aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-brand">Karthik<span class="accent">.</span></span>
+      <button id="mobile-close" class="mobile-close-btn" aria-label="Close Navigation Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+      <a href="#hero" class="mobile-nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#why-hire-me" class="mobile-nav-link"><i class="fa-solid fa-star"></i> Why Hire Me</a>
+      <a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+      <a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+      <a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-award"></i> Certifications</a>
+      <a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+      <a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="assets/resume.pdf" target="_blank" download class="btn btn-outline-accent w-full"
+        style="width: 100%; margin-bottom: 10px;">
+        <i class="fa-solid fa-file-pdf mr-2"></i> Download Resume
+      </a>
+      <a href="#contact" class="btn btn-primary w-full" style="width: 100%;">
+        <i class="fa-solid fa-paper-plane mr-2"></i> Let's Connect
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         HERO SECTION (STRONG FIRST IMPRESSION)
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-ambient-lighting" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-content-col fade-in-up" style="--delay: 80ms;">
+
+            <div class="hero-header-block">
+              <div class="hero-eyebrow">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Aspiring Software Developer | Python | Web Development | AI</span>
+              </div>
+
+              <h1 class="hero-name">
+                Karthik Venkata Jaya Karthik
+              </h1>
+
+              <div class="hero-headline">
+                I build <span class="accent-text">practical digital solutions</span><br />
+                that solve real-world problems.
+              </div>
+            </div>
+
+            <div class="hero-body-block">
+              <p class="hero-description">
+                Passionate about building practical software solutions using Python, web technologies, databases, and
+                AI. I enjoy transforming ideas into clean, useful, and user-focused applications.
+              </p>
+
+              <!-- Hero 3 Buttons as Requested -->
+              <div class="hero-actions-group">
+                <a href="assets/resume.pdf" target="_blank" class="btn btn-primary hero-btn-resume" id="hero-resume-btn"
+                  title="View official resume">
+                  <i class="fa-solid fa-file-pdf mr-1"></i> View Resume
+                </a>
+                <a href="#projects" class="btn btn-secondary" title="View practical software projects">
+                  <i class="fa-solid fa-layer-group mr-1"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline" title="Navigate to direct message form">
+                  <i class="fa-solid fa-envelope mr-1"></i> Contact Me
+                </a>
+              </div>
+
+              <!-- Quick Verification Bar -->
+              <div class="hero-meta-strip">
+                <div class="hero-meta-item">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span>Aditya Polytechnic College</span>
+                </div>
+                <div class="hero-meta-divider">•</div>
+                <div class="hero-meta-item highlight">
+                  <i class="fa-solid fa-trophy"></i>
+                  <span>CGPA: 9.72 / 10</span>
+                </div>
+                <div class="hero-meta-divider">•</div>
+                <div class="hero-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Rajahmundry, India</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Professional Portrait with Badge -->
+          <div class="hero-visual-wrapper fade-in-up" style="--delay: 160ms;">
+            <div class="portrait-container">
+
+              <!-- Subtle Status Badge near Profile -->
+              <div class="opportunity-badge" title="Open to developer roles, graduate engineer positions & internships">
+                <span class="pulse-indicator"></span>
+                <span class="badge-text">Available for Opportunities</span>
+              </div>
+
+              <div class="portrait-frame">
+                <img src="assets/images/karthik.jpg" alt="Karthik Venkata Jaya Karthik - Aspiring Software Developer"
+                  class="portrait-image" onerror="this.onerror=null; this.src='karthik.jpeg';" width="400" height="460"
+                  loading="eager" />
+                <div class="portrait-sheen" aria-hidden="true"></div>
+              </div>
+
+              <!-- Floating Quick Credentials Card -->
+              <div class="portrait-floating-card">
+                <div class="floating-card-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="floating-card-text">
+                  <span class="floating-card-title">Full Stack Python</span>
+                  <span class="floating-card-sub">FastAPI • MySQL • Web • AI</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         HR-FOCUSED "WHY HIRE ME?" SECTION (IMMEDIATE RECRUITER IMPACT)
+         ========================================================================== -->
+    <section id="why-hire-me" class="section why-hire-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">01 — VALUE PROPOSITION</span>
+          <h2 class="section-title">Why Hire Me?</h2>
+          <p class="section-subtitle">Focused on learning, building, and solving real-world problems.</p>
+        </div>
+
+        <div class="why-hire-grid">
+
+          <!-- Card 1: Strong Technical Foundation -->
+          <div class="why-card fade-in-up" style="--delay: 80ms;">
+            <div class="why-card-top">
+              <div class="why-icon-box">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <span class="why-card-index">01</span>
+            </div>
+            <h3 class="why-card-title">Strong Technical Foundation</h3>
+            <p class="why-card-desc">
+              Comfortable working with programming fundamentals, web technologies, databases, and development tools.
+            </p>
+            <div class="why-tag-pills">
+              <span class="why-tag">Python &amp; Java</span>
+              <span class="why-tag">MySQL</span>
+              <span class="why-tag">Web Standards</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Problem Solving -->
+          <div class="why-card fade-in-up" style="--delay: 140ms;">
+            <div class="why-card-top">
+              <div class="why-icon-box">
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <span class="why-card-index">02</span>
+            </div>
+            <h3 class="why-card-title">Problem Solving</h3>
+            <p class="why-card-desc">
+              Enjoy breaking down problems into practical solutions and continuously improving my approach.
+            </p>
+            <div class="why-tag-pills">
+              <span class="why-tag">Algorithmic Logic</span>
+              <span class="why-tag">CodeChef Practice</span>
+              <span class="why-tag">Systematic Debugging</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Real-World Projects -->
+          <div class="why-card fade-in-up" style="--delay: 200ms;">
+            <div class="why-card-top">
+              <div class="why-icon-box">
+                <i class="fa-solid fa-cubes-stacked"></i>
+              </div>
+              <span class="why-card-index">03</span>
+            </div>
+            <h3 class="why-card-title">Real-World Projects</h3>
+            <p class="why-card-desc">
+              Build practical applications that demonstrate my ability to turn concepts into working solutions.
+            </p>
+            <div class="why-tag-pills">
+              <span class="why-tag">FastAPI Endpoints</span>
+              <span class="why-tag">RESTful APIs</span>
+              <span class="why-tag">AI Workspaces</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Continuous Learner -->
+          <div class="why-card fade-in-up" style="--delay: 260ms;">
+            <div class="why-card-top">
+              <div class="why-icon-box">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <span class="why-card-index">04</span>
+            </div>
+            <h3 class="why-card-title">Continuous Learner</h3>
+            <p class="why-card-desc">
+              Continuously improving my technical skills by learning new technologies and building projects.
+            </p>
+            <div class="why-tag-pills">
+              <span class="why-tag">9.72 Academic CGPA</span>
+              <span class="why-tag">Rapid Tech Adoption</span>
+              <span class="why-tag">Certified Full-Stack</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION (CONCISE & RECRUITER-FRIENDLY)
+         ========================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-split-grid">
+
+          <!-- Left Column: Narrative Content -->
+          <div class="about-left-col fade-in-up">
+            <span class="section-badge">02 — ABOUT ME</span>
+            <h2 class="about-heading">
+              Turning Ideas Into Practical Solutions.
+            </h2>
+
+            <div class="about-narrative">
+              <p>
+                <strong>Who I am:</strong> I am a final-year Diploma student in Computer Science Engineering at Aditya
+                Polytechnic College with an academic record of <strong>9.72 / 10 CGPA</strong>, focusing on software
+                development and backend systems.
+              </p>
+              <p>
+                <strong>What I build:</strong> Practical digital applications that bridge clean user interfaces with
+                robust server architectures. My projects include real-time meteorological applications, full-featured
+                appointment booking portals, and AI-augmented developer workspaces.
+              </p>
+              <p>
+                <strong>Technologies I work with:</strong> Python, FastAPI, Java, C, MySQL, HTML5, CSS3, JavaScript,
+                Bootstrap, Git, and modern AI developer APIs (Google Gemini &amp; ChatGPT).
+              </p>
+              <p>
+                <strong>What opportunities I am seeking:</strong> Entry-level software developer roles, graduate
+                software engineering positions, and developer internships where I can contribute to real software
+                products and continue expanding my engineering impact.
+              </p>
+            </div>
+
+            <div class="about-academic-callout">
+              <div class="academic-callout-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="academic-callout-body">
+                <div class="academic-label">Academic Distinction</div>
+                <p class="academic-text">
+                  Diploma in Computer Science Engineering (Final Year) • <strong>9.72 / 10 CGPA</strong> at Aditya
+                  Polytechnic College.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Developer Code Window -->
+          <div class="about-right-col fade-in-up" style="--delay: 150ms;">
+
+            <div class="code-window-container">
+              <div class="code-window-header">
+                <div class="window-controls">
+                  <span class="dot dot-close"></span>
+                  <span class="dot dot-minimize"></span>
+                  <span class="dot dot-maximize"></span>
+                </div>
+                <div class="window-tab active">
+                  <i class="fa-brands fa-square-js text-yellow-400 mr-1"></i>
+                  <span>developer.config.ts</span>
+                </div>
+                <button class="code-copy-btn" id="code-snippet-copy" title="Copy code snippet">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="code-window-body">
+                <pre class="code-snippet"><code><span class="code-keyword">const</span> <span class="code-def">candidateProfile</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Karthik Venkata Jaya Karthik"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Aspiring Software Developer"</span>,
+  <span class="code-prop">education</span>: {
+    <span class="code-prop">institution</span>: <span class="code-str">"Aditya Polytechnic College"</span>,
+    <span class="code-prop">branch</span>: <span class="code-str">"Computer Science Engineering"</span>,
+    <span class="code-prop">cgpa</span>: <span class="code-num">9.72</span> <span class="code-comment">// Top academic tier</span>
+  },
+  <span class="code-prop">coreSkills</span>: [
+    <span class="code-str">"Python"</span>, <span class="code-str">"FastAPI"</span>, <span class="code-str">"Java"</span>, 
+    <span class="code-str">"MySQL"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"AI APIs"</span>
+  ],
+  <span class="code-prop">focusArea</span>: <span class="code-str">"Practical Software &amp; Scalable Web"</span>,
+  <span class="code-prop">availableForWork</span>: <span class="code-bool">true</span>,
+  <span class="code-prop">workEthic</span>: <span class="code-str">"Disciplined, pragmatic &amp; continuous learner"</span>
+};</code></pre>
+              </div>
+            </div>
+
+            <!-- Authentic Metric Strip Underneath (No Fake Statistics) -->
+            <div class="about-metrics-grid">
+              <div class="metric-box">
+                <span class="metric-number">9.72<span class="metric-sub">/10</span></span>
+                <span class="metric-label">Academic CGPA</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-number">3+</span>
+                <span class="metric-label">Practical Projects</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-number">2</span>
+                <span class="metric-label">Certifications</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Hands-on Practice</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION (CATEGORIZED, NO FAKE PERCENTAGES)
+         ========================================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">03 — TECHNICAL PROFICIENCY</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Categorized competencies developed through practical application and real-world
+            project building.</p>
+        </div>
+
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: Programming -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 80ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box"><i class="fa-solid fa-code"></i></div>
+              <h3 class="skill-cat-title">Programming</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-brands fa-python text-yellow-300"></i> Python</span>
+              <span class="skill-chip"><i class="fa-brands fa-java text-orange-400"></i> Java</span>
+              <span class="skill-chip"><i class="fa-solid fa-c text-blue-400"></i> C</span>
+              <span class="skill-chip"><i class="fa-brands fa-js text-yellow-400"></i> JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 130ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box"><i class="fa-solid fa-desktop"></i></div>
+              <h3 class="skill-cat-title">Web Development</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</span>
+              <span class="skill-chip"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3</span>
+              <span class="skill-chip"><i class="fa-brands fa-js text-yellow-400"></i> JavaScript</span>
+              <span class="skill-chip"><i class="fa-brands fa-bootstrap text-purple-400"></i> Bootstrap 5</span>
+              <span class="skill-chip"><i class="fa-solid fa-code text-cyan-400"></i> jQuery</span>
+              <span class="skill-chip"><i class="fa-solid fa-mobile-screen-button text-emerald-400"></i> Responsive
+                UI</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & APIs -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 180ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box"><i class="fa-solid fa-server"></i></div>
+              <h3 class="skill-cat-title">Backend &amp; APIs</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-solid fa-bolt text-teal-400"></i> FastAPI</span>
+              <span class="skill-chip"><i class="fa-solid fa-network-wired text-cyan-400"></i> RESTful APIs</span>
+              <span class="skill-chip"><i class="fa-brands fa-python text-blue-400"></i> Python Backend</span>
+              <span class="skill-chip"><i class="fa-solid fa-arrows-split-up-and-left text-indigo-400"></i> API
+                Integration</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Database -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 230ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box"><i class="fa-solid fa-database"></i></div>
+              <h3 class="skill-cat-title">Database</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-solid fa-database text-blue-400"></i> MySQL</span>
+              <span class="skill-chip"><i class="fa-solid fa-table text-teal-400"></i> Relational Modeling</span>
+              <span class="skill-chip"><i class="fa-solid fa-filter text-indigo-400"></i> SQL Queries</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Libraries & Data -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 280ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box violet"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3 class="skill-cat-title">Libraries &amp; Data</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-solid fa-cubes text-blue-400"></i> NumPy</span>
+              <span class="skill-chip"><i class="fa-solid fa-table-cells text-indigo-400"></i> Pandas</span>
+              <span class="skill-chip"><i class="fa-solid fa-file-code text-cyan-400"></i> JSON Handling</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools & Workflow -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 330ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box"><i class="fa-solid fa-toolbox"></i></div>
+              <h3 class="skill-cat-title">Tools &amp; Workflow</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-brands fa-git-alt text-orange-600"></i> Git</span>
+              <span class="skill-chip"><i class="fa-brands fa-github text-white"></i> GitHub</span>
+              <span class="skill-chip"><i class="fa-solid fa-code text-blue-400"></i> VS Code</span>
+              <span class="skill-chip"><i class="fa-solid fa-terminal text-emerald-400"></i> Command Line</span>
+            </div>
+          </div>
+
+          <!-- Category 7: AI & Productivity Tools -->
+          <div class="skill-cat-card fade-in-up" style="--delay: 380ms;">
+            <div class="skill-cat-header">
+              <div class="cat-icon-box violet"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="skill-cat-title">AI &amp; Productivity</h3>
+            </div>
+            <div class="skill-chips-container">
+              <span class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles text-cyan-400"></i> Google
+                Gemini</span>
+              <span class="skill-chip"><i class="fa-solid fa-robot text-emerald-400"></i> ChatGPT</span>
+              <span class="skill-chip"><i class="fa-brands fa-github-alt text-white"></i> GitHub Copilot</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION (CORE RECRUITER FOCUS)
+         ========================================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">04 — PRACTICAL PORTFOLIO</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Practical applications built to solve real-world problems.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ==========================================
+               Project 1: Weather Application
+               ========================================== -->
+          <article class="project-card fade-in-up" id="project-card-weather">
+            <div class="project-preview-pane">
+              <div class="project-mockup-frame">
+                <div class="mock-window-header">
+                  <div class="mock-dots">
+                    <span class="mock-dot red"></span>
+                    <span class="mock-dot yellow"></span>
+                    <span class="mock-dot green"></span>
+                  </div>
+                  <div class="mock-window-title">weather-app.live / realtime-forecast</div>
+                  <div class="mock-live-badge"><span class="badge-dot"></span> Live API</div>
+                </div>
+
+                <div class="mock-window-body">
+                  <div class="weather-preview-ui">
+                    <div class="weather-top-bar">
+                      <div class="weather-search-mock">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search city (e.g. Rajahmundry)...</span>
+                      </div>
+                    </div>
+                    <div class="weather-main-display">
+                      <div class="weather-temp-huge">28°C</div>
+                      <div class="weather-condition-wrap">
+                        <i class="fa-solid fa-cloud-sun weather-icon-sun"></i>
+                        <span class="weather-cond-text">Partly Cloudy</span>
+                      </div>
+                    </div>
+                    <div class="weather-location-row">
+                      <i class="fa-solid fa-location-dot accent-icon"></i>
+                      <span>Rajahmundry, Andhra Pradesh</span>
+                    </div>
+                    <div class="weather-metrics-pills">
+                      <span class="metric-pill"><i class="fa-solid fa-droplet"></i> Humidity: 64%</span>
+                      <span class="metric-pill"><i class="fa-solid fa-wind"></i> Wind: 14 km/h</span>
+                      <span class="metric-pill"><i class="fa-solid fa-gauge-high"></i> 1012 hPa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-pane">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-eyebrow-tag">REST API Integration • Web Application</span>
+                </div>
+                <h3 class="project-title">Weather Application</h3>
+                <p class="project-description">
+                  Real-time weather application designed to provide weather information through a clean and responsive
+                  user interface.
+                </p>
+
+                <div class="project-detail-box">
+                  <div class="detail-item">
+                    <span class="detail-label">Problem Solved:</span>
+                    <span class="detail-text">Provides instant, accurate meteorological conditions and forecasts without
+                      bloated interfaces.</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Key Features:</span>
+                    <span class="detail-text">Live city search, metric telemetry (temperature, humidity, wind),
+                      asynchronous API error handling.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-pills">
+                  <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-pill"><i class="fa-solid fa-cloud"></i> Weather API</span>
+                  <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tech-pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary quick-view-btn" data-project="weather"
+                  title="View in-depth case study">
+                  <i class="fa-solid fa-circle-info mr-1"></i> View Case Study
+                </button>
+                <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary" title="View source code on GitHub">
+                  <i class="fa-brands fa-github mr-1"></i> GitHub
+                </a>
+                <button class="btn btn-sm btn-outline project-demo-btn" data-project="weather"
+                  title="Interactive demo preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ==========================================
+               Project 2: Beauty Parlour Booking Website
+               ========================================== -->
+          <article class="project-card fade-in-up" id="project-card-parlour">
+            <div class="project-preview-pane">
+              <div class="project-mockup-frame">
+                <div class="mock-window-header">
+                  <div class="mock-dots">
+                    <span class="mock-dot red"></span>
+                    <span class="mock-dot yellow"></span>
+                    <span class="mock-dot green"></span>
+                  </div>
+                  <div class="mock-window-title">parlour-booking.web / client-portal</div>
+                  <div class="mock-live-badge"><span class="badge-dot"></span> Booking Portal</div>
+                </div>
+
+                <div class="mock-window-body">
+                  <div class="parlour-preview-ui">
+                    <div class="parlour-nav-bar">
+                      <span class="parlour-brand">Glow &amp; Grace Salon</span>
+                      <span class="parlour-book-cta">Book Appointment</span>
+                    </div>
+                    <div class="parlour-services-list">
+                      <div class="service-row">
+                        <div class="service-info">
+                          <span class="service-name">Facial &amp; Skin Rejuvenation</span>
+                          <span class="service-price">₹1,200 • 60 mins</span>
+                        </div>
+                        <span class="booking-status-tag booked">Booked</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-info">
+                          <span class="service-name">Hair Styling &amp; Spa Therapy</span>
+                          <span class="service-price">₹1,800 • 90 mins</span>
+                        </div>
+                        <span class="booking-status-tag available">Available</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-info">
+                          <span class="service-name">Bridal Makeover Package</span>
+                          <span class="service-price">Special Consultation</span>
+                        </div>
+                        <span class="booking-status-tag available">Available</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-pane">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-eyebrow-tag">Business Solution • Booking Web App</span>
+                </div>
+                <h3 class="project-title">Beauty Parlour Management &amp; Booking Website</h3>
+                <p class="project-description">
+                  Responsive beauty parlour website with services, pricing, customer reviews, and appointment booking
+                  functionality.
+                </p>
+
+                <div class="project-detail-box">
+                  <div class="detail-item">
+                    <span class="detail-label">Problem Solved:</span>
+                    <span class="detail-text">Digitizes traditional phone appointment management into a clear
+                      self-service schedule for salon clients.</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Key Features:</span>
+                    <span class="detail-text">Categorized service menu, dynamic pricing tiers, appointment booking
+                      workflow, client feedback showcase.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-pills">
+                  <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+                  <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tech-pill"><i class="fa-solid fa-code"></i> jQuery</span>
+                  <span class="tech-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary quick-view-btn" data-project="parlour"
+                  title="View in-depth case study">
+                  <i class="fa-solid fa-circle-info mr-1"></i> View Case Study
+                </button>
+                <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary" title="View source code on GitHub">
+                  <i class="fa-brands fa-github mr-1"></i> GitHub
+                </a>
+                <button class="btn btn-sm btn-outline project-demo-btn" data-project="parlour"
+                  title="Interactive demo preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ==========================================
+               Project 3: AURAAI — AI Productivity Workspace
+               ========================================== -->
+          <article class="project-card fade-in-up" id="project-card-aura">
+            <div class="project-preview-pane">
+              <div class="project-mockup-frame">
+                <div class="mock-window-header">
+                  <div class="mock-dots">
+                    <span class="mock-dot red"></span>
+                    <span class="mock-dot yellow"></span>
+                    <span class="mock-dot green"></span>
+                  </div>
+                  <div class="mock-window-title">aura-workspace.ai / developer-hub</div>
+                  <div class="mock-live-badge"><span class="badge-dot"></span> AI Active</div>
+                </div>
+
+                <div class="mock-window-body">
+                  <div class="aura-preview-ui">
+                    <div class="aura-prompt-bar">
+                      <div class="aura-icon-wrap"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                      <span class="aura-prompt-text">Generate FastAPI schema with async validation...</span>
+                    </div>
+                    <div class="aura-response-card">
+                      <div class="aura-response-header">
+                        <span class="aura-chip-model"><i class="fa-solid fa-brain"></i> FastAPI + Gemini API</span>
+                        <span class="aura-chip-status"><i class="fa-solid fa-bolt"></i> 142ms</span>
+                      </div>
+                      <div class="aura-code-preview">
+                        <code>@app.post("/api/v1/synthesize")
+async def generate_response(payload: QuerySchema):
+    return await ai_engine.process(payload)</code>
+                      </div>
+                    </div>
+                    <div class="aura-features-strip">
+                      <span><i class="fa-solid fa-comments"></i> AI Chat</span>
+                      <span><i class="fa-solid fa-bullseye"></i> Goals</span>
+                      <span><i class="fa-solid fa-file-lines"></i> Docs</span>
+                      <span><i class="fa-solid fa-terminal"></i> Sandbox</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-pane">
+              <div>
+                <div class="project-meta-row">
+                  <span class="project-eyebrow-tag">Full Stack Python • AI Productivity Suite</span>
+                </div>
+                <h3 class="project-title">AURAAI — AI Productivity Workspace</h3>
+                <p class="project-description">
+                  An AI-powered productivity workspace designed to bring AI chat, goals, documents, study, research,
+                  coding, and analytics into a unified environment.
+                </p>
+
+                <div class="detail-box">
+                  <div class="detail-item">
+                    <span class="detail-label">Problem Solved:</span>
+                    <span class="detail-text">Eliminates application switching by centralizing AI synthesis, project
+                      notes, goal tracking, and developer tasks.</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Key Features:</span>
+                    <span class="detail-text">FastAPI asynchronous backend, generative AI endpoint integration, unified
+                      workspace UI, prompt library.</span>
+                  </div>
+                </div>
+
+                <div class="project-tech-pills">
+                  <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-pill"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                  <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tech-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> AI APIs</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary quick-view-btn" data-project="aura"
+                  title="View in-depth case study">
+                  <i class="fa-solid fa-circle-info mr-1"></i> View Case Study
+                </button>
+                <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-secondary" title="View source code on GitHub">
+                  <i class="fa-brands fa-github mr-1"></i> GitHub
+                </a>
+                <button class="btn btn-sm btn-outline project-demo-btn" data-project="aura"
+                  title="Interactive demo preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         "HOW I BUILD" SECTION (ENGINEERING METHODOLOGY)
+         ========================================================================== -->
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">05 — ENGINEERING PROCESS</span>
+          <h2 class="section-title">How I Build</h2>
+          <p class="section-subtitle">A structured, disciplined approach to engineering reliable software from first
+            concept to final deployment.</p>
+        </div>
+
+        <div class="process-timeline">
+
+          <!-- Step 1 -->
+          <div class="process-step-card fade-in-up" style="--delay: 80ms;">
+            <div class="step-badge">01</div>
+            <h3 class="step-title">Understand</h3>
+            <p class="step-desc">
+              Understand the core problem, user requirements, and constraints thoroughly before writing any code.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card fade-in-up" style="--delay: 150ms;">
+            <div class="step-badge">02</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">
+              Plan the interface structure, database models, API contract endpoints, and user flows systematically.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card fade-in-up" style="--delay: 220ms;">
+            <div class="step-badge">03</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-desc">
+              Develop modular frontend components, backend routes, and database models following clean code practices.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card fade-in-up" style="--delay: 290ms;">
+            <div class="step-badge">04</div>
+            <h3 class="step-title">Improve</h3>
+            <p class="step-desc">
+              Test responsiveness, eliminate edge-case bugs, optimize performance, and polish user experience.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         CERTIFICATIONS SECTION (VERIFIED TECHNICAL CREDENTIALS)
+         ========================================================================== -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">06 — CREDENTIALS</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Formal technical certifications validating my hands-on knowledge in software
+            development.</p>
+        </div>
+
+        <div class="certifications-grid">
+
+          <!-- Certification 1 -->
+          <div class="cert-card fade-in-up" style="--delay: 100ms;">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <span class="cert-year-badge">2026</span>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-name">Full Stack Python Development</h3>
+              <div class="cert-authority">
+                <i class="fa-solid fa-building-columns mr-1"></i> Anurag IT Solutions
+              </div>
+              <p class="cert-info">
+                In-depth curriculum covering full stack Python architecture, FastAPI, MySQL database management, and
+                modern responsive web application development.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status-tag"><i class="fa-solid fa-check"></i> Verified Program</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card fade-in-up" style="--delay: 180ms;">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <span class="cert-year-badge">2025</span>
+            </div>
+            <div class="cert-card-body">
+              <h3 class="cert-name">Computer Fundamentals &amp; Office Automation</h3>
+              <div class="cert-authority">
+                <i class="fa-solid fa-building-columns mr-1"></i> Rama Krishna Math
+              </div>
+              <p class="cert-info">
+                Foundational computing principles, operating system management, workplace automation, document
+                processing, and computational problem solving.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-status-tag"><i class="fa-solid fa-check"></i> Verified Program</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         EDUCATION SECTION (VERTICAL ACADEMIC TIMELINE)
+         ========================================================================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-badge">07 — ACADEMIC JOURNEY</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic foundations in computer science engineering and problem solving.</p>
+        </div>
+
+        <div class="education-timeline">
+
+          <!-- Education 1 -->
+          <div class="edu-timeline-item fade-in-up" style="--delay: 100ms;">
+            <div class="edu-node-dot"></div>
+            <div class="edu-card">
+              <div class="edu-meta-row">
+                <span class="edu-period"><i class="fa-regular fa-calendar mr-1"></i> 2024 – 2027 • Final Year</span>
+                <span class="edu-grade-pill"><i class="fa-solid fa-star mr-1"></i> CGPA: 9.72 / 10</span>
+              </div>
+              <h3 class="edu-degree">Diploma in Computer Science Engineering</h3>
+              <div class="edu-institution">
+                <i class="fa-solid fa-school mr-1"></i> Aditya Polytechnic College
+              </div>
+              <p class="edu-details">
+                Focused on core computer science foundations: Programming with Python &amp; C, Data Structures,
+                Relational Database Management Systems, Web Technologies, and Computer Networks. Consistently maintained
+                top academic ranking.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="edu-timeline-item fade-in-up" style="--delay: 180ms;">
+            <div class="edu-node-dot"></div>
+            <div class="edu-card">
+              <div class="edu-meta-row">
+                <span class="edu-period"><i class="fa-regular fa-calendar mr-1"></i> Passing Year: 2024</span>
+                <span class="edu-grade-pill"><i class="fa-solid fa-check mr-1"></i> Score: 91.0%</span>
+              </div>
+              <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+              <div class="edu-institution">
+                <i class="fa-solid fa-school mr-1"></i> Chunilal Jajoo Rotary Municipal High School
+              </div>
+              <p class="edu-details">
+                Graduated with distinction, establishing strong quantitative foundations in mathematics, physical
+                sciences, and analytical thinking.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         RESUME CTA SECTION
+         ========================================================================== -->
+    <section id="resume-section" class="section resume-cta-section">
+      <div class="container">
+        <div class="cta-banner-card fade-in-up">
+          <div class="cta-badge">08 — CURRICULUM VITAE</div>
+          <h2 class="cta-heading">Interested in my profile?</h2>
+          <p class="cta-subtext">
+            Explore my resume to learn more about my education, technical skills, projects, and experience.
+          </p>
+          <div class="cta-buttons-row">
+            <a href="assets/resume.pdf" target="_blank" download class="btn btn-primary" id="cta-download-resume">
+              <i class="fa-solid fa-download mr-2"></i> Download Resume (PDF)
+            </a>
+            <button class="btn btn-secondary" id="cta-view-resume">
+              <i class="fa-solid fa-eye mr-2"></i> View Online Resume
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane mr-2"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         CONTACT SECTION (REAL FUNCTIONAL MESSAGE SUBMISSION)
+         ========================================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header fade-in-up" style="text-align: left; margin-bottom: 36px; max-width: 100%;">
+          <span class="section-badge">09 — GET IN TOUCH</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle" style="margin: 0; max-width: 650px;">
+            Have a project, opportunity, or collaboration in mind? I'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Verified Channels -->
+          <div class="contact-channels-column fade-in-up" style="--delay: 100ms;">
+
+            <!-- Email -->
+            <div class="contact-channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-info">
+                <div class="channel-label">Direct Email</div>
+                <a href="mailto:karanamvenkatjaykarthik@gmail.com" class="channel-val">
+                  karanamvenkatjaykarthik@gmail.com
+                </a>
+              </div>
+              <button class="copy-pill-btn" data-copy="karanamvenkatjaykarthik@gmail.com" title="Copy email address"
+                aria-label="Copy email">
+                <i class="fa-regular fa-copy"></i> <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-channel-card">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="channel-info">
+                <div class="channel-label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/venkat-jay-karthik-karanam-098800404" target="_blank"
+                  rel="noopener noreferrer" class="channel-val">
+                  venkat-jay-karthik-karanam
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/in/venkat-jay-karthik-karanam-098800404" target="_blank"
+                rel="noopener noreferrer" class="copy-pill-btn" aria-label="Visit LinkedIn profile">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-channel-card">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-info">
+                <div class="channel-label">GitHub</div>
+                <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+                  class="channel-val">
+                  Karthik04-karanam
+                </a>
+              </div>
+              <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+                class="copy-pill-btn" aria-label="Visit GitHub repository">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- CodeChef -->
+            <div class="contact-channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="channel-info">
+                <div class="channel-label">CodeChef Profile</div>
+                <a href="https://www.codechef.com/users/holy_care_25" target="_blank" rel="noopener noreferrer"
+                  class="channel-val">
+                  holy_care_25
+                </a>
+              </div>
+              <a href="https://www.codechef.com/users/holy_care_25" target="_blank" rel="noopener noreferrer"
+                class="copy-pill-btn" aria-label="Visit CodeChef profile">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-info">
+                <div class="channel-label">Location</div>
+                <span class="channel-val">Rajahmundry, Andhra Pradesh, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Direct Message Form (REAL SUBMISSION) -->
+          <div class="contact-form-card fade-in-up" style="--delay: 150ms;">
+            <div class="form-header">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Messages are transmitted directly to my primary inbox.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+
+              <!-- Anti-Spam Honeypot Field (Hidden from real users) -->
+              <div class="form-group-hidden" style="display: none;" aria-hidden="true">
+                <label for="form-gotcha">Do not fill this</label>
+                <input type="text" id="form-gotcha" name="_gotcha" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="form-name" name="name" required minlength="2" placeholder="e.g. Jane Doe"
+                  class="form-control" autocomplete="name" />
+                <span class="field-error" id="error-name"></span>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="form-email" name="email" required placeholder="e.g. jane@company.com"
+                  class="form-control" autocomplete="email" />
+                <span class="field-error" id="error-email"></span>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject <span class="required">*</span></label>
+                <input type="text" id="form-subject" name="subject" required minlength="3"
+                  placeholder="e.g. Software Developer Opportunity / Project Inquiry" class="form-control" />
+                <span class="field-error" id="error-subject"></span>
+              </div>
+
+              <!-- Message Body -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="form-message" name="message" rows="4" required minlength="10"
+                  placeholder="Tell me about the role, project, or collaboration..." class="form-control"></textarea>
+                <span class="field-error" id="error-message"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary w-full" style="width: 100%;">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane mr-2"></i> Send Message</span>
+                <span class="btn-loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin mr-2"></i>
+                  Sending...</span>
+              </button>
+
+              <!-- Feedback Banner -->
+              <div id="form-feedback" class="form-feedback" role="alert" style="display: none;"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4 class="footer-name">Karthik Venkata Jaya Karthik</h4>
+          <p class="footer-role">Aspiring Software Developer | Python | Web Development | AI</p>
+          <p class="footer-tagline">"Building practical digital solutions that solve real-world problems."</p>
+        </div>
+
+        <div class="footer-quick-links">
+          <span class="footer-heading">Quick Links</span>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-social-column">
+          <span class="footer-heading">Connect</span>
+          <div class="footer-social-links">
+            <a href="https://github.com/Karthik04-karanam" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/venkat-jay-karthik-karanam-098800404" target="_blank"
+              rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://codechef.com/users/holy_care_25" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="CodeChef">
+              <i class="fa-solid fa-code"></i>
+            </a>
+            <a href="mailto:karanamvenkatjaykarthik@gmail.com" class="social-icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Karthik Venkata Jaya Karthik. All rights reserved.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+       MODALS: CASE STUDY & ONLINE RESUME VIEWER
+       ========================================================================== -->
+
+  <!-- 1. Project Case Study Modal -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close Case Study Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-body">
+        <!-- Injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Online Resume Viewer Modal -->
+  <div id="resume-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog resume-modal-dialog">
+      <button id="resume-modal-close" class="modal-close-btn" aria-label="Close Resume Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="resume-modal-header">
+        <div class="resume-modal-title">
+          <i class="fa-solid fa-file-lines text-cyan mr-2"></i>
+          <span>Curriculum Vitae — Karthik Venkata Jaya Karthik</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="assets/resume.pdf" target="_blank" download class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-download mr-1"></i> Download PDF
+          </a>
+        </div>
+      </div>
+      <div id="resume-modal-body" class="resume-modal-content">
+        <!-- Dynamically rendered or clean preview -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Configuration Script -->
+  <script src="js/config.js"></script>
+  <!-- Main JavaScript Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
