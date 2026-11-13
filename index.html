@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
+```html
 <head>
-  <script type="application/ld+json">
+    <!-- Character Encoding & Responsive Design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>KarthikPortfolio4 | Karnam Venkata Jaya Karthik - Full Stack Python Developer</title>
+
+    <meta name="title" content="KarthikPortfolio4 | Karnam Venkata Jaya Karthik - Full Stack Python Developer">
+    <meta name="description" content="Welcome to KarthikPortfolio4, the official portfolio of Karnam Venkata Jaya Karthik. Explore Python, FastAPI, Full Stack Web Development, AI applications, technical skills and software projects.">
+    <meta name="author" content="Karnam Venkata Jaya Karthik">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="keywords" content="Karnam Venkata Jaya Karthik, KarthikPortfolio4, Python Developer, Full Stack Python Developer, FastAPI Developer, Web Development, AI Projects, Software Developer Portfolio, Rajahmundry">
+    <meta name="theme-color" content="#060911">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://karthikjaya-portfolio.netlify.app/">
+
+    <!-- Person Structured Data (Google SEO) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Karnam Venkata Jaya Karthik",
+        "alternateName": "KarthikPortfolio4",
+        "url": "https://karthikjaya-portfolio.netlify.app/",
+        "jobTitle": "Full Stack Python Developer",
+        "description": "Aspiring software developer specializing in Python, FastAPI, web development and AI-based applications.",
+        "sameAs": [
+            "https://github.com/Karthik04-karanam",
+            "https://www.linkedin.com/in/karnam-venkata-jaya-karthik-098800404/"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Karanam Venkata Jaya Karthik",
-  "alternateName": "KarthikPort4",
-  "url": "https://karthikjaya-portfolio.netlify.app/",
-  "jobTitle": "Full Stack Python Developer",
-  "sameAs": [
-    "https://github.com/Karthik04-karanam",
-    "https://www.linkedin.com/in/venkat-jay-karthik-karanam-098800404/"
-  ]
+  "@type": "WebSite",
+  "name": "KarthikPortfolio4",
+  "alternateName": "Karnam Venkata Jaya Karthik",
+  "url": "https://karthikjaya-portfolio.netlify.app/"
 }
 </script>
-  <title>KarthikPort4 – Official Portfolio | Karanam Venkata Jaya Karthik</title>
 
-<meta name="description" content="Welcome to KarthikPort4, the official portfolio of Karanam Venkata Jaya Karthik. Explore Python development, FastAPI, web development skills and projects.">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KarthikPortfolio4">
+    <meta property="og:url" content="https://karthikjaya-portfolio.netlify.app/">
+    <meta property="og:title" content="KarthikPortfolio4 | Karnam Venkata Jaya Karthik - Official Portfolio">
+    <meta property="og:description" content="Explore the official portfolio of Karnam Venkata Jaya Karthik, featuring Python development, FastAPI, web technologies, AI applications and software projects.">
+    <meta property="og:image" content="https://karthikjaya-portfolio.netlify.app/assets/images/karthik.jpg">
+    <meta property="og:image:alt" content="Karnam Venkata Jaya Karthik - Developer Portfolio">
 
-<meta name="author" content="Karanam Venkata Jaya Karthik">
+    <!-- Twitter / X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KarthikPortfolio4 | Karnam Venkata Jaya Karthik">
+    <meta name="twitter:description" content="Official portfolio showcasing Python, FastAPI, Full Stack Web Development and AI-based software projects.">
+    <meta name="twitter:image" content="https://karthikjaya-portfolio.netlify.app/assets/images/karthik.jpg">
 
-<meta name="robots" content="index, follow">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23060911'/%3E%3Ctext x='50%25' y='68%25' font-size='56' font-weight='800' font-family='sans-serif' fill='%2300d2ff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
 
-<link rel="canonical" href="https://karthikjaya-portfolio.netlify.app/">
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<meta property="og:title" content="KarthikPort4 – Official Portfolio">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<meta property="og:description" content="Karanam Venkata Jaya Karthik | Full Stack Python Developer">
+    <!-- Font Awesome 6.5 Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
 
-<meta property="og:url" content="https://karthikjaya-portfolio.netlify.app/">
+    <!-- EmailJS Browser SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<meta property="og:type" content="website">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Primary Meta Tags -->
-  <title>Karthik Venkata Jaya Karthik | Aspiring Software Developer</title>
-  <meta name="title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
-  <meta name="description"
-    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
-  <meta name="author" content="Karthik Venkata Jaya Karthik" />
-  <meta name="keywords"
-    content="Karthik Venkata Jaya Karthik, Aspiring Software Developer, Python, Web Development, AI, FastAPI, Aditya Polytechnic College, Rajahmundry, Software Engineer Portfolio" />
-  <meta name="theme-color" content="#060911" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/Karthik04-karanam" />
-  <meta property="og:title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
-  <meta property="og:description"
-    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
-  <meta property="og:image" content="assets/images/karthik.jpg" />
-
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Karthik Venkata Jaya Karthik | Aspiring Software Developer" />
-  <meta name="twitter:description"
-    content="Portfolio of Karthik Venkata Jaya Karthik — aspiring software developer focused on Python, web development, AI, and practical software solutions." />
-  <meta name="twitter:image" content="assets/images/karthik.jpg" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23060911'/><text x='50%' y='68%' font-size='56' font-weight='800' font-family='sans-serif' fill='%2300d2ff' text-anchor='middle'>K</text></svg>" />
-
-  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-
-  <!-- Font Awesome 6.5 Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- EmailJS Browser SDK (optional integration) -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -95,8 +100,8 @@
        ========================================================================== -->
   <header id="main-header" class="site-header">
     <div class="container nav-container">
-      <a href="#hero" class="nav-brand" aria-label="Karthik Venkata Jaya Karthik Homepage">
-        Karthik<span class="accent">.</span>
+      <a href="#hero" class="nav-brand" aria-label="Karnam Venkata Jaya Karthik Homepage">
+        Karnam<span class="accent">.</span>
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -129,7 +134,7 @@
   <aside id="mobile-drawer" class="mobile-nav-drawer" aria-hidden="true" role="dialog"
     aria-label="Mobile Navigation Drawer">
     <div class="mobile-drawer-header">
-      <span class="mobile-drawer-brand">Karthik<span class="accent">.</span></span>
+      <span class="mobile-drawer-brand">Karnam<span class="accent">.</span></span>
       <button id="mobile-close" class="mobile-close-btn" aria-label="Close Navigation Menu">
         <i class="fa-solid fa-xmark"></i>
       </button>
@@ -177,7 +182,7 @@
               </div>
 
               <h1 class="hero-name">
-                Karanam Venkata Jaya Karthik
+                Karnam Venkata Jaya Karthik
               </h1>
 
               <div class="hero-headline">
@@ -238,7 +243,7 @@
               </div>
 
               <div class="portrait-frame">
-                <img src="assets/images/karthik.jpg" alt="Karthik Venkata Jaya Karthik - Aspiring Software Developer"
+                <img src="assets/images/karthik.jpg" alt="Karnam  Venkata Jaya Karthik - Aspiring Software Developer"
                   class="portrait-image" onerror="this.onerror=null; this.src='karthik.jpeg';" width="400" height="460"
                   loading="eager" />
                 <div class="portrait-sheen" aria-hidden="true"></div>
@@ -1273,7 +1278,7 @@ async def generate_response(payload: QuerySchema):
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <h4 class="footer-name">Karthik Venkata Jaya Karthik</h4>
+          <h4 class="footer-name">Karnam Venkata Jaya Karthik</h4>
           <p class="footer-role">Aspiring Software Developer | Python | Web Development | AI</p>
           <p class="footer-tagline">"Building practical digital solutions that solve real-world problems."</p>
         </div>
@@ -1298,7 +1303,7 @@ async def generate_response(payload: QuerySchema):
               class="social-icon-btn" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/venkat-jay-karthik-karanam-098800404" target="_blank"
+            <a href="https://www.linkedin.com/in/karnam-venkata-jaya-karthik-098800404/" target="_blank"
               rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
@@ -1314,7 +1319,7 @@ async def generate_response(payload: QuerySchema):
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="current-year">2026</span> Karthik Venkata Jaya Karthik. All rights reserved.</p>
+        <p>&copy; <span id="current-year">2026</span> Karnam Venkata Jaya Karthik. All rights reserved.</p>
         <a href="#hero" class="back-to-top" aria-label="Back to top of page">
           Back to Top <i class="fa-solid fa-arrow-up"></i>
         </a>
@@ -1348,7 +1353,7 @@ async def generate_response(payload: QuerySchema):
       <div class="resume-modal-header">
         <div class="resume-modal-title">
           <i class="fa-solid fa-file-lines text-cyan mr-2"></i>
-          <span>Curriculum Vitae — Karthik Venkata Jaya Karthik</span>
+          <span>Curriculum Vitae — Karnam Venkata Jaya Karthik</span>
         </div>
         <div class="resume-modal-actions">
           <a href="assets/resume.pdf" target="_blank" download class="btn btn-sm btn-primary">
